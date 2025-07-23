@@ -1,5 +1,6 @@
 // file javascript
-// This file is part of the js-biglietto-treno project.
+
+
 document.getElementById('ticket-form').addEventListener('submit', function (e) {
       e.preventDefault(); // blocca il refresh della pagina
 
@@ -39,3 +40,6 @@ document.getElementById('ticket-form').addEventListener('submit', function (e) {
       }
       resultDiv.textContent = "Il prezzo del biglietto è: " + price + " euro";
 });
+
+const table = document.createElement('flex-container');
+table.className = 'flex-container';
