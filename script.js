@@ -4,8 +4,8 @@ document.getElementById('ticket-form').addEventListener('submit', function (e) {
       e.preventDefault(); // blocca il refresh della pagina
 
       const priceKm = 0.21;
-      let km = prompt("quanti km vuoi percorrere?");
-      let age = prompt("quanti anni hai?");
+      const km = parseFloat(document.getElementById('distance').value);
+      const age = parseInt(document.getElementById('age').value);
       //prezzo al km 
       // quanti anni ha il passeggero
 
@@ -24,13 +24,18 @@ document.getElementById('ticket-form').addEventListener('submit', function (e) {
 
 
 
-
-      else if (message === "no")
-
-            price = price.toFixed(2);
+      price = price.toFixed(2);
       console.log("Il prezzo del biglietto è: " + price + " euro");
 
 
-// prezzo finale del biglietto, arrotondato a due decimali
+      // prezzo finale del biglietto, arrotondato a due decimali
 
-// messaggio di prompt per l'annullamento dell'acquisto del biglietto
+      // Mostra il risultato nella pagina
+      let resultDiv = document.getElementById('result');
+      if (!resultDiv) {
+            resultDiv = document.createElement('div');
+            resultDiv.id = 'result';
+            document.body.appendChild(resultDiv);
+      }
+      resultDiv.textContent = "Il prezzo del biglietto è: " + price + " euro";
+});
