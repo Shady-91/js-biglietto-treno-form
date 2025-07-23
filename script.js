@@ -36,5 +36,5 @@ document.getElementById('ticket-form').addEventListener('submit', function (e) {
       // Mostra il risultato nella pagina
       // ...existing code...
       let resultDiv = document.getElementById('result');
-      resultDiv.textContent = `Ecco a te ${firstName} ${lastName}: questo è il prezzo del tuo biglietto (${price} euro) e questi sono i km percorsi ${km}`;
+      resultDiv.textContent = `Ecco a te ${firstName} ${lastName}: questo è il prezzo del tuo biglietto (${price} euro) la Distanza da percorrere è ${km} km e la tua età è ${age} anni.`;
 });
