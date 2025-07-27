@@ -1,0 +1,14 @@
+Description: Write a program that asks the user: the number of kilometers to be traveled, the age of the passenger.
+Based on this information, it must calculate the total ticket price according to the following rules: the ticket price is defined based on kilometers (€0.21 per km),
+a 20% discount is applied for minors, a 40% discount is applied for seniors over 65. 
+
+MILESTONE 1: Let's start by implementing the program without any aesthetics: using only two inputs and a button (not styled), 
+we will meet the specifications written above. The final response (or output) will also be written in the console.
+
+MILESTONE 2: Once milestone 1 is complete and functional, 
+we will create a form on the page where the user can input data and view the final calculation with the price. 
+The summary of the data and the output of the final price will then need to be displayed on the page (the price should be formatted with a maximum of two decimal places to indicate cents). 
+This will require a minimum of research.
+
+MILESTONE 3: Now that the logic is functional on the page, we can focus on styling, 
+refining the HTML and CSS to make it aesthetically pleasing.
